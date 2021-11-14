@@ -1,66 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flappy Plane - Play</title>
+    <title>Flappy Plane</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <script src="careerConsole.js" defer></script>
-    <script src="play.js" defer></script>
+    <script src="dist/careerConsole.js" defer></script>
+    <script src="dist/index.js" defer></script>
   </head>
-  <body class="game" onclick="() => {}">
-    <div id="playArea">
-      <nav>
-        <a href="/" class="navLink">Home</a>
-        <a href="/play.html" class="navLink">Play</a>
-        <a href="/leaderboard.html" class="navLink">Leaderboard</a>
-      </nav>
-      <nav id="difficultyNav">
-        <a href="?d=Easy" class="navLink">Easy</a>
-        <a href="?d=Normal" class="navLink">Normal</a>
-        <a href="?d=Hard" class="navLink">Hard</a>
-        <a href="?d=Insane" class="navLink">Insane</a>
-        <a href="?d=Impossible" class="navLink">Impossible</a>
-      </nav>
-      <form id="playerInfo" style="display: none">
-        <div>
-          <label for="playerInfoFirstName">First Name</label>
-          <input id="playerInfoFirstName" required placeholder="First Name" />
-        </div>
-        <div>
-          <label for="playerInfoFirstName">Last Name</label>
-          <input id="playerInfoLastName" required placeholder="Last Name" />
-        </div>
-        <div>
-          <label for="playerInfoFirstName">Email</label>
-          <input id="playerInfoEmail" required placeholder="Email" type="email" />
-        </div>
-        <div><input type="submit" /></div>
-      </form>
-      <div id="sky" style="display: none">
-        <div id="flyZone">
-          <div id="menuScreen" class="animate__animated animate__faster screen animate__fadeIn">
-            <img src="splash.png" />
-          </div>
-          <div id="gameScore" class="screen hide"></div>
-          <div id="scoreScreen" class="animate__animated animate__faster screen">
-            <img src="scoreboard.png" />
-            <div id="finalScore"><img src="font_small_7.png" /></div>
-            <div id="bestScore"><img src="font_small_7.png" /></div>
-            <img src="splash_mini.png" />
-          </div>
-          <canvas></canvas>
-        </div>
+  <body>
+    <nav>
+      <a href="/" class="navLink">Home</a>
+      <a href="/play.html" class="navLink">Play</a>
+      <a href="/leaderboard.html" class="navLink">Leaderboard</a>
+    </nav>
 
-        <div>
-          <p style="font-size: 12px; margin: 5px">You can use your mouse, space bar, or touch screen to play</p>
-        </div>
-      </div>
+    <div id="home-content">
+      <h1 class="title" style="text-align: center;">FLAPPY PLANE</h1>
+      <p id="gamesCount" style="text-align: center;"></p>
+
+      <p style="text-align: center;">At every hackathon American Airlines sponsors, we love to give y'all a break from hacking to try your hand at making and throwing paper airplanes. Unfortunately, due to COVID-19 hackathons are virtual, so we needed to improvise.</p>
+      <p style="text-align: center;">So we made Flappy Plane...</p>
+
+      </br>
+
+      <h2 class="title" style="text-align: center">HELPFUL HINTS</h2>
+      <p>Here are some helpful hints when you're ready to get started:</p>
+      <ul>
+        <li>You can use the space bar OR your mouse to jump</li>
+        <li>Avoid crashing into pipes to increase your score</li>
+        <li>The game ends when you clip a pipe with your plane OR if you hit the ground</li>
+        <li>If you find the game too easy/hard, change the difficulty!</li>
+      </ul>
+      </br>
     </div>
   </body>
 </html>
