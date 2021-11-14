@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flappy Plane - Leaderboard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="dist/careerConsole.js" defer></script>
+    <script src="dist/leaderboard.js" defer></script>
+    <script src="dist/wsb.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="navLink">Home</a>
+      <a href="/play.html" class="navLink">Play</a>
+      <a href="/leaderboard.html" class="navLink">Leaderboard</a>
+    </nav>
+    <h1 class="title"><span>Leaderboards </span><span>(Top 25)</span></h1>
+    <div class="instructions">
+      <p>Click on a row to watch a replay</p>
+      <br />
+      <p><span class="backdrop-text">**</span> IMPOSSIBLE is possible</p>
+    </div>
+
+    <div id="leaderboards"></div>
+    <div id="wsb">
+      <p id="tendiesCount"></p>
+      <img src="assets/wsb.png" />
+    </div>
+  </body>
+</html>
