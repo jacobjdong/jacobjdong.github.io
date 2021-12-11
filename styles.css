@@ -9,15 +9,8 @@
 
 body {
   font-family: joystix, 'Courier New', Courier, monospace;
-  color: white;
-  background-color: #0078d1;
-}
-
-body.game {
-  touch-action: manipulation;
-  height: 100%;
-  overflow: hidden;
-  padding: 0;
+  color: #13070C;
+  background-color: #FEFDFF;
 }
 
 nav {
@@ -32,23 +25,6 @@ nav {
   margin: 0 5px 10px;
 }
 
-#difficultyNav {
-  white-space: nowrap;
-  margin: 5px 0 0;
-  padding: 0 18px 0;
-  overflow: auto;
-}
-
-#difficultyNav > .navLink {
-  font-size: 12px;
-  margin: 0 2px 10px;
-}
-
-.backdrop-text {
-  font-family: joystix, 'Courier New', Courier, monospace;
-  text-shadow: 2px 2px black;
-}
-
 h1.title {
   font-size: 22px;
   text-shadow: 2px 2px black;
@@ -59,29 +35,8 @@ h2.title {
   text-shadow: 2px 2px black;
 }
 
-#playArea {
-  overflow: hidden;
-  height: 100vh;
-}
-
 .navLink:hover {
   text-shadow: 3px 4px black;
-}
-
-#canvas {
-  border: 1px solid red;
-}
-
-#sky {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#flyZone {
-  position: relative;
-  height: 420px;
 }
 
 .hide {
@@ -99,94 +54,6 @@ h2.title {
   bottom: 0;
   width: 100%;
   max-width: 250px;
-}
-
-#menuScreen {
-  top: 100px;
-}
-
-#gameScore {
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  top: 40px;
-}
-
-#gameScore > img {
-  width: 24px;
-  height: 28px;
-  padding: 1px;
-}
-
-#scoreScreen {
-  top: 100px;
-  opacity: 0;
-}
-
-#scoreScreen > div > img {
-  padding: 1px;
-}
-
-#scoreScreen > #finalScore {
-  position: absolute;
-  top: 105px;
-  left: 30px;
-}
-
-#scoreScreen > #bestScore {
-  position: absolute;
-  top: 146px;
-  left: 30px;
-}
-
-#leaderboards {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 30px 10px 20px;
-}
-
-.leaderboard {
-  margin: 0 10px 20px;
-  background-color: hsla(0, 0%, 0%, 0.25);
-  max-width: 250px;
-  width: 100%;
-}
-
-.instructions {
-  display: inline-block;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 10px 20px;
-  border-left: 5px solid hsla(0, 0%, 0%, 0.5);
-  padding: 5px;
-  background-color: hsla(0, 0%, 0%, 0.25);
-}
-
-.leaderboard > h2 {
-  text-shadow: 2px 2px black;
-  margin: 10px 0;
-  text-align: center;
-}
-
-.leaderboard .row {
-  display: flex;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 3px 10px;
-  background-color: hsla(0, 0%, 100%, 0.075);
-  margin-bottom: 5px;
-  color: white;
-  text-decoration: none;
-}
-
-.leaderboard .row > .rank {
-  width: 25px;
-  padding-right: 10px;
-  text-align: right;
-}
-
-.leaderboard .row > .gameName {
-  flex: 1;
 }
 
 #home-content {
