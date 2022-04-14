@@ -8023,6 +8023,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-light2 {
+  --bs-bg-opacity: .15;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
@@ -11643,6 +11648,33 @@ body {
     padding: 5rem;
   }
   .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
+
+.experience-section {
+  padding: 10rem 0;
+}
+.experience-section .featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .experience-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+.experience-section .experience-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+@media (min-width: 992px) {
+  .experience-section .experience-text {
+    padding: 5rem;
+  }
+  .experience-section .experience-text hr {
     border-color: #64a19d;
     border-width: 0.25rem;
     width: 30%;
